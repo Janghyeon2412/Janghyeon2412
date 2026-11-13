@@ -10,7 +10,7 @@ const url = process.argv[2] || 'https://github-trailer.vercel.app/city/Janghyeon
 const out = process.argv[3] || 'city.gif';
 const FRAMES = Number(process.env.FRAMES || 48);
 const FPS = Number(process.env.FPS || 8);
-const W = Number(process.env.W || 720), H = Number(process.env.H || 300);
+const W = Number(process.env.W || 860), H = Number(process.env.H || 210);
 
 const dir = await mkdtemp(join(tmpdir(), 'city-'));
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
