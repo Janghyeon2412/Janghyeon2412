@@ -2,8 +2,9 @@ name: 잔디 도시 GIF
 
 on:
   workflow_dispatch: # Actions 탭에서 "Run workflow" 버튼으로 바로 실행
-  schedule:
-    - cron: '7 16 * * *' # 매일 새벽 1시 7분 (한국 시간)
+  # 매일 자동 촬영은 꺼 둠 (프로필에서 도시를 뺐기 때문). 다시 켜려면 아래 두 줄의 # 를 지우면 된다.
+  # schedule:
+  #   - cron: '7 16 * * *' # 매일 새벽 1시 7분 (한국 시간)
 
 permissions:
   contents: write
